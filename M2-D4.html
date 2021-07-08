@@ -32,9 +32,7 @@
     />
     <title>Strive - Random Team Generator</title>
     <style>
-      .team{
-        background: lightskyblue;
-      }
+      
 
       hr{
         background: darkblue;
@@ -42,6 +40,10 @@
         border-radius: 5px;
       }
 
+      .team > ul{
+        border: 1px solid black;
+        background: linear-gradient(90deg, rgba(6,246,247,0.04525560224089631) 0%, rgba(8,242,216,1) 50%, rgba(2,0,36,1) 100%);
+      }
 
     </style>
   </head>
@@ -71,10 +73,18 @@
 
     <hr>
 
-    <div class="container border-left border-dark rounded allNamesContainer">
+    <div class="container border-left border-dark rounded allNamesContainer mb-3">
       <div class="namelist col-9 border border-dark rounded shadow">
         <o1 class="nameListContainer">
           <h4 class="pt-2">Name List Generator</h4>
+          <li>Azizbek</li>
+          <li>Barry</li>
+          <li>Weoy</li>
+          <li>Aron</li>
+          <li>Roosa</li>
+          <li>Lia</li>
+          <li>Tetiana</li>
+          <li>Logan</li>
         </o1>
         <br>
         <p id="teamsPlayingPreview">You are playing against x Team(s).</p>
@@ -95,15 +105,32 @@
     </div>
     
 
-    <div class="container pb-3">
-      <div class="allTeams row">
-     
-      </div>
-    </div>
-
-    <div class="team">
-      <div class="container">
-        
+    <div class="container mb-3">
+      <div class=row>
+        <div class="col-3 team" id="team1">
+          <h5 class="p-1">Team 1</h5>
+          <ul id="team-NameList">
+            <li>x</li>
+          </ul>
+        </div>
+        <div class="col-3 team" id="team2">
+          <h5 class="p-1">Team 2</h5>
+          <ul>
+             <li>x</li>
+          </ul>
+        </div>
+        <div class="col-3 team" id="team3">
+          <h5 class="p-1">Team 3</h5>
+          <ul>
+            <li>x</li>
+          </ul>
+        </div>
+        <div class="col-3 team" id="team4">
+          <h5 class="p-1">Team 4</h5>
+          <ul>
+            <li>x</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -120,6 +147,8 @@
     <script src="M2-D4.js"></script>
   </body>
 </html>
+
+
 
 
 <!-- The features are the following:
